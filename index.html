@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic JavaScript Example</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        #message {
+            margin-top: 1px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello from JavaScript!</h1>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            const messageElement = document.getElementById("message");
+            messageElement.textContent = messageElement.textContent? "" :"You clicked the button!";
+        }
+    </script>
+
+</body>
+</html>
